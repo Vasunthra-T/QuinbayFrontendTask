@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <div>
+    <form name="myForm" method="POST" onsubmit="return validateform()">
+        <h3>For queries,contact!!</h3>
+        <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value="" required><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value=""><br>
+  <p>You are a</p>
+  <input type="radio" id="student" name="member" value="">
+  <label for="student">Student</label><br>
+  <input type="radio" id="parent" name="member" value="">
+  <label for="parent">Parent</label><br>
+  <input type="radio" id="relative" name="member" value="">
+  <label for="relative">Relative</label><br>
+<textarea name="query" rows="10" columns="30" required>
+    Please enter your queries here..
+
+</textarea><br>
+<input type="submit" value="Submit">
+
+<h3 id="disp" style= "color:green"> </h3>  
+<h4 id="error" style= "color:red"> </h4> 
+</form> 
+    </div>
+</body>
+
+<script>  
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var query=document.myform.query.value;  
+      
+    if (name==null || name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(query==null || query==""){  
+      alert("Select anything");  
+      return false;  
+      }  
+      else if(document.getElementById('student').checked) {   
+                document.getElementById("disp").innerHTML   
+                    = document.getElementById("student").value   
+                    + " radio button is checked";   
+            }   
+            else if(document.getElementById('parent').checked) {   
+                document.getElementById("disp").innerHTML   
+                    = document.getElementById("parent").value   
+                    + " radio button is checked";     
+            }   
+            else if(document.getElementById('relative').checked) {   
+                document.getElementById("disp").innerHTML   
+                    = document.getElementById("relative").value   
+                    + " radio button is checked";     
+            }   
+            else {
+                document.getElementById("error").innerHTML   
+                    = "Please select anything";  
+            } 
+ 
+    }  
+    </script>  
+    
+</html>

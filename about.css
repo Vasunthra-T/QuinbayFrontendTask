@@ -1,0 +1,64 @@
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: D2691E;
+    color:white
+}
+img{
+    object-fit: fill;
+    height:550px;
+    width:100%;
+}
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: D2691E;
+    color:white;
+    text-align: right;
+}
+/*body{
+    background-image: url('/Users/vasunthra/Desktop/portfolio/images.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+h4{
+    color:D2691E;
+}
+
+
+*{box-sizing: border-box;
+}
+.column {
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size:x-large;
+    
+  }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+
